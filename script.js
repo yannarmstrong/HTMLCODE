@@ -1,4 +1,3 @@
-
 let dealerSum = 0;
 let yourSum = 0;
 
@@ -17,13 +16,13 @@ window.onload = function() {
 }
 
 function buildDeck() {
-    let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-    let types = ["C", "D", "H", "S"];
+    let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let suits  = ["C", "D", "H", "S"];
     deck = [];
 
-    for (let i = 0; i < types.length; i++) {
-        for (let j = 0; j < values.length; j++) {
-            deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
+    for (let i = 0; i < suits.length; i++) {
+        for (let x = 0; x < cards.length; x++) {
+            deck.push(cards[x] + "-" + suits[i]); //A-C -> K-C, A-D -> K-D
         }
     }
     // console.log(deck);
@@ -36,7 +35,7 @@ function shuffleDeck() {
         deck[i] = deck[j];
         deck[j] = temp;
     }
-    console.log(deck);
+    // console.log(deck);
 }
 
 function startGame() {
@@ -123,6 +122,7 @@ function getValue(card) {
     let data = card.split("-"); // "4-C" -> ["4", "C"]
     let value = data[0];
 
+    // Suit cards
     if (isNaN(value)) { //A J Q K
         if (value == "A") {
             return 11;
