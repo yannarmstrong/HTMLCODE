@@ -1,0 +1,94 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    background-image: url('blackJackTable.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  /* Game container styling */
+  .game-container {
+    position: relative;
+    border: thick solid #660;
+    background-color: #280;
+    width: 579px;
+    height: 500px;
+  }
+  
+  /* Dealer and player cards styling */
+  .card {
+    position: absolute;
+    border: 2px solid rgb(109, 109, 34);
+    background-color: #660;
+  }
+  
+  #dealer1 { left: 50px; top: 50px; }
+  #dealer2 { left: 150px; top: 50px; }
+  #dealer3 { left: 250px; top: 50px; }
+  #dealer4 { left: 350px; top: 50px; }
+  #dealer5 { left: 450px; top: 50px; }
+  
+  #player1 { left: 50px; top: 250px; }
+  #player2 { left: 150px; top: 250px; }
+  #player3 { left: 250px; top: 250px; }
+  #player4 { left: 350px; top: 250px; }
+  #player5 { left: 450px; top: 250px; }
+  
+  /* Text and input styling */
+  .text-large {
+    color: #9F9;
+    font-size: large;
+  }
+  
+  .text-yellow {
+    color: yellow;
+    font-size: x-large;
+  }
+  
+  #betdiv {
+    position: absolute;
+    left: 300px;
+    top: 425px;
+    color: #9F9;
+  }
+  
+  /* Button styling */
+  .button {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+  }
+  
+  #message {
+    color: #600;
+    font-weight: bold;
+  }
+
+  #money {
+  position: absolute;
+  left: 20px;
+  top: 445px; /* Adjust top position as needed */
+}
+
+#money-label {
+  position: absolute;
+  left: 20px;
+  top: 430px; /* Adjust top position as needed */
+  color: #9F9;
+  font-size: large;
+}
+
+.action-buttons {
+    text-align: center;
+  }
+
+  .button {
+    margin: 0 10px; /* Adjust spacing between buttons */
+  }
+  
+  .info-section {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing between buttons and info section */
+  }

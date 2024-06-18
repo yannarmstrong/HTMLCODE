@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Blackjack in Javascript</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="Card.js"></script>
+<script type="text/javascript" src="DisplayedCard.js"></script>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script src="script.js"></script>
+
+</head>
+<body>
+   <table class="game-container" align="center" cellpadding="0" cellspacing="10" border="0">
+     <tr>
+       <td>
+         <div style="position: absolute; left: 20px; top: 15px;" class="text-large">Dealer's cards:</div>
+         <div id="dealer1" class="card"></div>
+         <div id="dealer2" class="card"></div>
+         <div id="dealer3" class="card"></div>
+         <div id="dealer4" class="card"></div>
+         <div id="dealer5" class="card"></div>
+         <div style="position: absolute; left: 20px; top: 210px;" class="text-large">Your cards:</div>
+         <div id="player1" class="card"></div>
+         <div id="player2" class="card"></div>
+         <div id="player3" class="card"></div>
+         <div id="player4" class="card"></div>
+         <div id="player5" class="card"></div>
+         <div style="position: absolute; left: 20px; top: 410px;" class="text-large">You have:</div>
+         <div id="money" class="text-yellow"></div>
+         <div id="betdiv">
+           <span class="text-large">Your bet:</span>&nbsp; <input type="text" size="6" id="bet">
+         </div>
+       </td>
+     </tr>
+     <tr>
+       <td align="center">
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <input type="button" class="button" id="hitButton" value="Hit" onclick="hit()" disabled>
+         <input type="button" class="button" id="standButton" value="Stand" onclick="stand()" disabled>
+         <input type="button" class="button" id="newGameButton" value="New Game" onclick="startGame()">
+       </td>
+     </tr>
+     <tr>
+       <td align="center">
+         <span id="message">Welcome to Blackjack!<br>Click "New Game" to Begin.</span>
+       </td>
+     </tr>
+   </table>
+ </body>
